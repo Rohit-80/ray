@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+
+}
+
+html {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    
+}
+
+#main-header {
+    width: 100%;
+    height: 7vh;
+    background-color: #14457b;
+}
+
+.contact-header {
+    height: 100%;
+    line-height: 3em;
+}
+
+.social-header {
+    height: 100%;
+    line-height: 3em;
+}
+
+.container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    
+    font-weight: 900;
+}
+
+.horizontal-list li {
+    margin: 0 1em;
+    color: white;
+    /* box-shadow: 0px 0px 1px 0px lightblue; */
+    /* border-left: 1px solid rgb(176, 188, 192, 0.2); */
+    border-left: solid 1px rgba(176, 188, 192, .2);
+    padding-left: 1em;
+
+}
+
+.horizontal-list li:last-child {
+
+    border-right: solid 1px rgba(176, 188, 192, .2);
+    padding-right: 1em;
+
+}
+
+#secondary-header {
+    margin: 1em 0;
+    width: 100%;
+    height: 50vh;
+    /* background-color: lightcoral; */
+
+}
+
+.header-logo {
+    width: 100%;
+    height: 10vh;
+    margin-left: 0.7em;
+}
+
+#secondary-header img {
+    width: 90%;
+    height: 90%;
+}
+
+.secondary-container {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+
+
+.horizontal-s-list {
+    height: auto;
+    list-style: none;
+    width: 100%;
+
+}
+
+
+
+ .horizontal-s-list  {
+       display: flex;
+       flex-direction: column;
+}
+
+.horizontal-s-list li {
+    /* font-weight: bold; */
+    
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 3em;
+    font-weight: 1000;
+    color: black;
+    margin: 0px 2em;
+}
+
+
+.dropdown-btn {
+    line-height: 2em;
+   
+    font-weight: 1000;
+    font-size: 1rem;
+    background-color: white;
+    border: 0;
+    margin-top: 0.5em;
+    margin: 0 2em;
+}
+
+/* .dropdown-btn:hover{
+    background-color: skyblue;
+    padding: 1.5em;
+    transition: all 1s;
+} */
+
+
+.Console-btn {
+    display: inline-block;
+    font-weight: 1000;
+    font-size: 1rem;
+    
+    padding: 0.7em 2em;
+    background-color: #2490eb;
+    color: white;
+    border-radius: 7px;
+    border:  1px solid #2490eb
+
+}
+
+.dropdown-list {
+    display: none;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+
+
+.dropdown-list a {
+    text-align: center;
+    display: block;
+}
+
+.dropdown-list a:hover {
+    background-color: skyblue;
+    z-index: 1;
+    /* transition: all 0.s; */
+}
+@media (min-width:1000px) {
+    .header-logo {
+        width: 100%;
+        height: 10vh;
+        margin-left: 0;
+    }
+    #secondary-header {
+        margin: 1em 0;
+        width: 100%;
+        height: 10vh;
+        /* background-color: lightcoral; */
+    
+    }
+    .secondary-container {
+        width: 75%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+    
+    }
+    #secondary-header #hidden-btn{
+        display: none;
+        
+        background-color: red;
+    }
+    .horizontal-s-list{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+       padding: 0;
+       margin: 0;
+    }
+
+   
+    
+    #secondary-header #hidden-btn{
+        display: block;
+        background-color: white;
+        
+    }
+    
+} 
+
+
+
+
+
+/* Main */
+
+main {
+    position: relative;
+    z-index: -1;
+}
+
+#contact-section {
+
+    background-image: url(img/computed-tomography-scan-room-background-radiologist-examining-x-ray-diagnosis-while-standing-near-ct-scanner-hospital-medical-technology-concept_116317-7783.jpg);
+    width: 100%;
+    height: 160vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-section {
+
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 7em 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr ;
+    border: 5px dotted red;
+
+}
+
+.Contact-div {
+
+    width: 100%;
+    height: 100%;
+    border: 5px dotted white;
+}
+
+.Contact-div span {
+    font-size: 1em;
+    
+    color: #134;
+    font-weight: 600;
+    padding: 0.3em;
+    background-color: #D3E9FB;
+    border-radius: 7px;
+    border: 1px solid #D3E9FB;
+}
+
+.Contact-div .authority-logo {
+    display: flex;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 30vh;
+    margin-top: 2em;
+
+}
+
+.Contact-div h1 {
+    font-size: 3.2em;
+    font-weight: 3000;
+    color: white;
+}
+
+.Contact-div p {
+    font-size: 1.2em;
+    font-weight: 3000;
+    color: honeydew;
+}
+
+.authority-logo .image {
+    width: 30%;
+    height: 60%;
+    margin: 0 1em;
+    /* padding: 2em 2em; */
+    /* padding-top: 0.5em;
+    padding: 0 7em;
+    padding-bottom: 6em; */
+    /* background-color: yellow; */
+    /* border: black 3px solid; */
+}
+
+.authority-logo .image img {
+    width: 100%;
+    height: 100%;
+    /* background-size: obje; */
+    object-fit: contain;
+    /* padding: 2em; */
+}
+
+.contact-div-form {
+    width: 80%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    margin: 0 3em;
+    margin-top: -1.5em;
+    /* border: 10px yellow solid; */
+    border-radius: 12px;
+}
+
+
+.contact-div-form h1{
+    font-size: 2rem;
+}
+.contact-div-form p{
+    margin-top: 0.5em;
+    font-size: 1rem;
+}
+
+.contact-div-form form{
+    margin-top: 2em;
+}
+/* .Contact-div form {
+    margin-top: 2em;
+} */
+
+.Contact-div form input {
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px lightblue solid;
+    margin: 0.2em 0;
+    padding: 0.2em 2em;
+    /* border-top-left-radius: 50%; */
+}
+
+
+button[type="submit"] {
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px skyblue solid;
+    color: white;
+    margin: 2em 0;
+    padding: 0.3em;
+    background-color: skyblue;
+}
+
+.blacker {
+    color: black;
+}
+
+@media(min-width:1000px){
+    .container-section {
+
+        width: 85%;
+        height: 65%;
+        margin: 0 auto;
+        padding: 7em 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        border: 5px dotted red;
+    
+    }
+
+    .Contact-div {
+
+        width: 100%;
+        height: 100%;
+        border: 5px dotted white;
+    }
+    #contact-section{
+        height: 100vh;
+    }
+}
+
+#about-iframe{
+    border: 0;
+    margin-top: -3em;
+}
